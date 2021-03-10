@@ -1,24 +1,76 @@
-# README
+# Raven Social media website
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project is a social mdia website build with Ruby on Rails.
 
-Things you may want to cover:
+## About
 
-* Ruby version
+This project is a social mdia website
 
-* System dependencies
+It focuses on creating User with validations and associations on rails using Active Record, and create events.
 
-* Configuration
+In this project we:
+- Made a model for users.
+- Made a model for posts.
+- Made a model for comments.
+- Made a model for frienships.
+- Made associations between the user and the friendship model.
+- Made associations for creator and receiver of friend request.
 
-* Database creation
+## Prerequisites
 
-* Database initialization
+Ruby: 2.7.2 Rails: 6.1.1 Postgres: >=13
 
-* How to run the test suite
+## Usage
 
-* Services (job queues, cache servers, search engines, etc.)
+- Open a terminal.
+- Clone the repo by typing that command `git clone https://github.com/icebox827/raven` 
+- Run `bundle install` in your terminal
+- Run `db:create` in your terminal to create the database
+- Run `db:migrate` in your terminal to migrate the database
+- Run `rails s`
+- Start adding users, and create events
 
-* Deployment instructions
+## Live demo
+[Just click here!]()
 
-* ...
+## Technologies
+
+- Ruby
+- Rails
+- PostgreSQL
+- VSCode
+- Bootstrap
+
+## Authors
+
+👤 **Denis Lafontant**
+
+- GitHub: [@icebox827](https://github.com/icebox827)
+- Twitter: [@heracles2k5](https://twitter.com/@heracles2k5)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/denis-lafontant/)
+
+👤 **Victor Pacheco**
+
+- GitHub: [@vichuge](https://github.com/vichuge)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/victor-pacheco-7946aab2/)
+- Twitter: [@Pachecofloresv](https://twitter.com/Pachecofloresv)
+
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/icebox827/raven/issues/3).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+### Acknowledgements
+
+- Microverse
+- The Odin Project
+
+## 📝 License
+
+This project is [MIT](./LICENSE) licensed.
