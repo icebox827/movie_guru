@@ -3,7 +3,8 @@ class ArticlesController < ApplicationController
 
   # GET /articles or /articles.json
   def index
-    @articles = Article.all
+    @categories = Category.all.order(priority: :desc)
+    @top_article = Vote.most_voted_article
   end
 
   # GET /articles/1 or /articles/1.json
