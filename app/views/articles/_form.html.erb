@@ -29,10 +29,10 @@
 
   <div class="field form-group">
     <%= form.label :image %>
-    <%= select_tag "article[#{:image}]", options_for_select(["MI6","Cristiano","Kaka","lewando","Stadium1","Stadium2","Stadium3","Basketball1","Basketball2","Basketball3","Car1","Car2"]), class:"form-control" %>
+    <%= select_tag "article[#{:image}]", options_for_select(["MI6","Star_Wars","Star_Trek","James_Bond","Dumb_Dumber","30_minutes"]), class:"form-control" %>
   </div>
 
   <div class="actions">
-    <%= form.submit "Post Article", class:"btn white bg-orang %>
+    <%= form.submit "Post Article", class:"btn white bg-orange" %>
   </div>
 <% end %>

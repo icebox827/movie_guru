@@ -22,8 +22,7 @@ class ArticlesController < ApplicationController
 
   # POST /articles or /articles.json
   def create
-    user = User.find(session[:current_user]['id'])
-    @article = user.articles.build(article_params)
+    @article = current_user.articles.build(article_params)
 
     respond_to do |format|
       if @article.save
