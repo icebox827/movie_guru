@@ -2,11 +2,7 @@
 <div class="cover">
   <span class="choose bg-orange white">TOP RANKED</span>
       <%= link_to article_path(@top_article.id) do %>
-        <%
-=begin%>
- <%= image_tag @top_article.image.downcase, class:'cover-img full' %> 
-<%
-=end%>
+ 
         <div class="cover-gradient position-absolute full"></div>
         <div class="cover-text p-3">
             <h3 class="orange"><%= @top_article.title %></h3>
@@ -15,26 +11,21 @@
       <% end %>
   </div>
   <div class="cards-holder d-flex flex-row">
-    <% @categories.each do |cat| %>
-    <% if !cat.articles.last.nil? %>
+    <% @categories.each do |c| %>
+    <% if !c.articles.last.nil? %>
       <div class="my-card ">
-      <%= link_to article_path(cat.articles.last.id) do %>
-          <%
-=begin%>
- <%= image_tag "#{cat.articles.last.image.downcase}", class:'cover-img full' %> 
-<%
-=end%>
+      <%= link_to article_path(c.articles.last.id) do %>
+        
           <div class="cover-gradient position-absolute"></div>
           <div class="my-card-text p-3">
-              <h3 class="my-card-cat"><%= cat.name.capitalize %></h3>
-              <h4><%= cat.articles.last.title %></h4>
+              <h3 class="my-card-cat"><%= c.name.capitalize %></h3>
+              <h4><%= c.articles.last.title %></h4>
           </div>
       <% end %> 
       </div>
     <% end %>    
     <% end %>
 </div>
-<h1>Articles</h1>
 <table>
   <thead>
     <tr>
