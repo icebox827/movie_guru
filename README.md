@@ -1,20 +1,11 @@
-# Raven Social media website
-
-This project is a social mdia website build with Ruby on Rails.
+# Movie Guru Blog website
 
 ## About
 
-This project is a social mdia website
+This project is a blog about movies where users can create an account, signing in, writing an article about a movie, and vote for a movie.
+The movie with the highest rank will be displayed in the Top-ranked section on the home page.
 
-It focuses on creating User with validations and associations on rails using Active Record, and create events.
-
-In this project we:
-- Made a model for users.
-- Made a model for posts.
-- Made a model for comments.
-- Made a model for frienships.
-- Made associations between the user and the friendship model.
-- Made associations for creator and receiver of friend request.
+[APP_SCREENSHOT.png]()
 
 ## Prerequisites
 
@@ -23,7 +14,7 @@ Ruby: 2.7.2 Rails: 6.1.1 Postgres: >=13
 ## Usage
 
 - Open a terminal.
-- Clone the repo by typing that command `git clone https://github.com/icebox827/raven` 
+- Clone the repo by typing that command `git clone https://github.com/icebox827/movie_guru` 
 - Run `bundle install` in your terminal
 - Run `db:create` in your terminal to create the database
 - Run `db:migrate` in your terminal to migrate the database
@@ -41,7 +32,7 @@ Ruby: 2.7.2 Rails: 6.1.1 Postgres: >=13
 - VSCode
 - Bootstrap
 
-## Authors
+## Author
 
 👤 **Denis Lafontant**
 
@@ -49,18 +40,11 @@ Ruby: 2.7.2 Rails: 6.1.1 Postgres: >=13
 - Twitter: [@heracles2k5](https://twitter.com/@heracles2k5)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/denis-lafontant/)
 
-👤 **Victor Pacheco**
-
-- GitHub: [@vichuge](https://github.com/vichuge)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/victor-pacheco-7946aab2/)
-- Twitter: [@Pachecofloresv](https://twitter.com/Pachecofloresv)
-
-
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/icebox827/raven/issues/3).
+Feel free to check the [issues page](https://github.com/icebox827/movie_guru/issues/1).
 
 ## Show your support
 
