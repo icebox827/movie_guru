@@ -5,7 +5,7 @@
 This project is a blog about movies where users can create an account, signing in, writing an article about a movie, and vote for a movie.
 The movie with the highest rank will be displayed in the Top-ranked section on the home page.
 
-[APP_SCREENSHOT.png]()
+[APP_SCREENSHOT.png](https://github.com/icebox827/movie_guru/blob/feature_app/APP_SCREENSHOT.png?raw=true)
 
 ## Prerequisites
 
