@@ -1,4 +1,4 @@
-<div class="h-100">
+<div class="h-100 mt-5 pt-2">
 
   <% reverse=true %>
     <% @articles.each_slice(2) do |article1, article2| %>
@@ -26,7 +26,7 @@
                 <p class="text-wrap">BY:<strong>
                     <%=article1.author.name%>
                   </strong></p>
-                
+                  <%= link_to 'Back', categories_path %>
               </div>
             </div>
           </div>
@@ -53,7 +53,7 @@
                   <p class="text-wrap">BY:<strong>
                       <%=article2.author.name%>
                     </strong></p>
-                 
+                    <%= link_to 'Back', categories_path %>
                 </div>
               </div>
             </div>
@@ -80,7 +80,7 @@
                     <p class="text-wrap">BY:<strong>
                         <%=article1.author.name%>
                       </strong></p>
-                   
+                      <%= link_to 'Back', categories_path %>
                   </div>
                   <div class="col-6">
                     <%= link_to article_path(article1.id) do %>
@@ -107,7 +107,7 @@
                       <p class="text-wrap">BY:<strong>
                           <%=article2.author.name%>
                         </strong></p>
-                      
+                        <%= link_to 'Back', categories_path %>
                     </div>
                     <div class="col-6">
                       <%= link_to article_path(article2.id) do %>
