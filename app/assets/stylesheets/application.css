@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  */
- {
+{
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
@@ -100,6 +100,7 @@ a.orange {
 .navbar-brand.white {
   color: white !important;
 }
+
 .full {
   width: 100%;
   height: 100%;
@@ -171,7 +172,7 @@ a.orange {
 
 .my-card-text h3 {
   display: inline-block;
-  width: fit-content;
+  width: 100%;
   color: #f76108;
   background-color: #000000bf;
   padding: 6px;
@@ -193,13 +194,13 @@ a.orange {
 
 .my-card-cat {
   display: inline-block;
-  width: fit-content;
+  width: 100%;
   border-bottom: #ffff01 3px solid;
 }
 
 .my-card-catt {
   display: inline-block;
-  width: fit-content;
+  width: 100%;
   border-bottom: #f76108 3px solid;
   color: #f76108;
 }
@@ -296,7 +297,7 @@ a.orange {
 
 .divo {
   display: inline-block;
-  width: fit-content;
+  width: 100%;
   text-align: center;
 }
 
@@ -361,6 +362,7 @@ a.orange {
     display: flex;
     flex-direction: column;
   }
+
   .random-art div {
     width: 100%;
     margin-top: 20px;
@@ -370,6 +372,7 @@ a.orange {
     width: 100% !important;
     height: 250px !important;
   }
+
   .vertical-card {
     height: 500px;
   }
@@ -387,12 +390,11 @@ a.orange {
 
   nav.navbar-expand-lg {
     display: flex;
-    flex-direction: row;
     flex-flow: row;
   }
 
   .navbar-expand-lg .container-fluid {
-    width: fit-content !important;
+    width: 100% !important;
     padding-right: 0;
   }
 }
