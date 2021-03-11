@@ -10,8 +10,8 @@ class Article < ApplicationRecord
   has_one_attached :image
 
   scope :ordred_by_votes, -> { order(votes_count: :desc).includes(:category) }
-  scope :with_attached_image, -> { includes(image_attachment: :blob) }
-  scope :with_image_category, -> { includes(image_attachment: :blob).includes(:category) }
+  # scope :with_attached_image, -> { includes(image_attachment: :blob) }
+  # scope :with_image_category, -> { includes(image_attachment: :blob).includes(:category) }
 
   def votes_count
     votes.count
