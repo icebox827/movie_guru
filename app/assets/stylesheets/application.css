@@ -123,7 +123,7 @@ a.orange {
 }
 
 .cover {
-    height: 500px;
+    height: 600px;
     position: relative;
 }
 
@@ -153,6 +153,12 @@ a.orange {
 .my-card {
     width: 25%;
     position: relative;
+}
+
+.my-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .my-card-text {
