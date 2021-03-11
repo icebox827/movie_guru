@@ -8,7 +8,8 @@ class CategoriesController < ApplicationController
 
   # GET /categories/1 or /categories/1.json
   def show
-    @category = Category.find(params[:id])
+    @category = Category.includes(:articles).find(params[:id])
+    @articles = @category.articles.includes(:votes).includes(:author).order(created_at: 'DESC')
   end
 
   # GET /categories/new
