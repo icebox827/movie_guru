@@ -1,0 +1,31 @@
+<p id="notice">
+  <%= notice %>
+</p>
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <h1 class="text-center pt-3">Categories</h1>
+      <div class="card">
+        <div class="card-body">
+          <div class="cards-holder d-flex flex-column">
+            <% @categories.each do |category| %>
+              <div class="my-card ">
+                <h3>
+                  <%= category.name.capitalize %>
+                  <td>
+                    <%= link_to 'Show' , category %>
+                  </td>
+                </h3>
+              </div>
+            <% end %>
+          </div>   
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+</div>
+
+<%= yield %>
+<%= render "layouts/footer" %>
