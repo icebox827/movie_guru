@@ -4,7 +4,7 @@
 <div class="cover">
   <span class="choose bg-orange white">TOP RANKED</span>
   <%= link_to article_path(@top_article.id) do %>
-  
+  <%= image_tag @top_article.image.downcase, class:'cover-img full' %>
     <div class="cover-gradient position-absolute full"></div>
     <div class="cover-text p-3">
       <h3 class="orange">
