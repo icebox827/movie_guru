@@ -3,7 +3,7 @@ Rails.application.routes.draw do
  
   resources :users, only: %i[new create show]
   resources :sessions, only: %i[new create destroy]
-  resources :categories, only: %i[index new create show]
+  resources :categories, only: %i[index new create show], to: 'show'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   resources :articles do
     post '/vote/', to: 'votes#create'
