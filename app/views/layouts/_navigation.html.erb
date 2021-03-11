@@ -1,0 +1,39 @@
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-purple ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Movie Guru</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <% if logged_in? %>
+          <%= link_to "Home", articles_path, class: "nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Create Article", new_article_path, class: "nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "All Categories", categories_path, class: "nav-link" %>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <h6 class="pt-2">
+          <%= session[:username] %>
+        </h6>
+        <p class="control">
+          <%= link_to "Sign Out", sign_out_url, class: "nav-link" %>
+        </p>
+        <% else %>
+        <p class="control">
+          <%= link_to "Sign In", new_session_path, class: "nav-link" %> 
+        </p> |
+        <p class="control">
+          <%= link_to "Register", new_user_path, class: "nav-link active" %>
+        </p>
+        <% end %>
+      </form>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,43 @@
+
+  <div class="row mt-5 pt-2">
+    <div class="col-md12">
+      <div class="cover">
+        <span class="choose bg-orange white">TOP RANKED</span>
+        <%= link_to article_path(@top_article.id) do %>
+        <%= image_tag @top_article.image.downcase, class:'cover-img full' %>
+          <div class="cover-gradient position-absolute full"></div>
+          <div class="cover-text p-3">
+            <h3 class="orange">
+              <%= @top_article.title %>
+            </h3>
+            <h6 class="text-nowrap">
+              <%= @top_article.text %>
+            </h6>
+          </div>
+          <% end %>
+      </div>
+      <div class="cards-holder d-flex flex-row">
+        <% @categories.each do |c| %>
+          <% if !c.articles.last.nil? %>
+            <div class="my-card ">
+              <%= link_to article_path(c.articles.last.id) do %>
+                <%= image_tag c.articles.last.image %>
+                <div class="cover-gradient position-absolute"></div>
+                <div class="my-card-text p-3">
+                  <h3 class="my-card-cat">
+                    <%= c.name.capitalize %>
+                  </h3>
+                  <h4>
+                    <%= c.articles.last.title %>
+                  </h4>
+                </div>
+                <% end %>
+            </div>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+
+
+  
