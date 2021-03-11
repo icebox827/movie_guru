@@ -7,6 +7,11 @@ The movie with the highest rank will be displayed in the Top-ranked section on t
 
 ![SCREENSHOT](APP_SCREENSHOT.png)
 
+## 🔨 Tested with
+    Ruby gem shoulda Matchers
+    Ruby gem capybara
+![Screenshot](test.png)
+
 ## Prerequisites
 
 Ruby: 2.7.2 Rails: 6.1.1 Postgres: >=13
