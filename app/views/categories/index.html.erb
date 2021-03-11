@@ -1,25 +1,24 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Categories</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @categories.each do |category| %>
-      <tr>
-        <td><%= link_to 'Show', category %></td>
-       
-        <td><%= link_to 'Destroy', category, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Category', new_category_path %>
+<p id="notice">
+  <%= notice %>
+</p>
+<div class="container">
+  <div class="row mt-4">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <h1>Categories</h1>
+      <div class="cards-holder d-flex flex-column">
+        <% @categories.each do |category| %>
+          <div class="my-card ">
+            <h3 class="my-card-cat">
+              <%= category.name.capitalize %>
+              <td>
+                <%= link_to 'Show' , category %>
+              </td>
+            </h3>
+          </div>
+        <% end %>
+      </div>   
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+</div>
