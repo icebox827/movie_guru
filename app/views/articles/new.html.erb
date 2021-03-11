@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row mt-5">
+    <h1 class="text-center pt-3">New Article</h1>
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+      <%= render 'form' , article: @article %>
+
+      <%= link_to 'Back' , articles_path %>
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+</div>
+
+    <%= yield %>
+      <%= render "layouts/footer" %>
+      
