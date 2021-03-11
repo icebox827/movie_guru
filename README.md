@@ -7,6 +7,9 @@ The movie with the highest rank will be displayed in the Top-ranked section on t
 
 ![SCREENSHOT](APP_SCREENSHOT.png)
 
+## Credit design
+- Design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio)
+
 ## 🔨 Tested with
     Ruby gem shoulda Matchers
     Ruby gem capybara
@@ -24,7 +27,9 @@ Ruby: 2.7.2 Rails: 6.1.1 Postgres: >=13
 - Run `db:create` in your terminal to create the database
 - Run `db:migrate` in your terminal to migrate the database
 - Run `rails s`
-- Start adding users, and create events
+- Start your localhost on 3000 port in your browser: "http://127.0.0.1:3000"
+- Register with name, create articles and vote for articles!
+
 
 ## Live demo
 [Just click here!]()
@@ -60,6 +65,7 @@ Give a ⭐️ if you like this project!
 
 - Microverse
 - The Odin Project
+- Notion
 
 ## 📝 License
 
