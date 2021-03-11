@@ -19,8 +19,8 @@
         </li>
       </ul>
       <form class="d-flex">
-        <h6>
-          <%= link_to session[:username], users_path, class: "nav-link" %>
+        <h6 class="pt-2">
+          <%= session[:username] %>
         </h6>
         <p class="control">
           <%= link_to "Sign Out", sign_out_url, class: "nav-link" %>
