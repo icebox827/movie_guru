@@ -11,6 +11,9 @@
           <div class="card-text border-bottom pb-2">
             <p><%= @article.text %></p>
           </div>
+          <div class="cart-text">
+            <%= vote_or_unvote_btn(@article) %>
+          </div>
         </div>
       </div>
     </div>
