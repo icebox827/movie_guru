@@ -6,6 +6,7 @@
         <div class="card-body">
           <div class="card-title border-bottom pb-2">
              <h2><%= @article.title %></h2> 
+             <%= image_tag "#{@article.image.downcase}", class:"cover-img full img-max-height" %>
              <h4>Category :<%= @article.category.name %></h4> 
           </div>
           <div class="card-text border-bottom pb-2">
