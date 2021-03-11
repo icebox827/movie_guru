@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-dark bg-purple ">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Movie Guru</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -8,6 +8,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
+          <% if logged_in? %>
           <%= link_to "Home", articles_path, class: "nav-link" %>
         </li>
         <li class="nav-item">
@@ -22,14 +23,16 @@
           <%= link_to session[:username], users_path, class: "nav-link" %>
         </h6>
         <p class="control">
+          <%= link_to "Sign Out", sign_out_url, class: "nav-link" %>
+        </p>
+        <% else %>
+        <p class="control">
           <%= link_to "Sign In", new_session_path, class: "nav-link" %> 
         </p> |
         <p class="control">
           <%= link_to "Register", new_user_path, class: "nav-link active" %>
         </p>
-        <p class="control">
-          <%= link_to "Sign Out", sign_out_url, class: "nav-link" %>
-        </p>
+        <% end %>
       </form>
     </div>
   </div>
