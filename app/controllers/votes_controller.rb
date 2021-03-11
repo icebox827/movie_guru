@@ -1,6 +1,6 @@
 class VotesController < ApplicationController
   def create
-    @vote = current_user.votes.new(user_id: @voter.id, article_id: params[:article_id])
+    @vote = current_user.votes.new(user_id: current_user.id, article_id: params[:article_id])
 
     if @vote.save
       redirect_to articles_path, notice: 'You liked an article.'
@@ -23,9 +23,5 @@ class VotesController < ApplicationController
 
   def vote_params_article
     params.permit(:article_id)
-  end
-
-  def set_voter
-    @voter = User.find(current_user.id)
   end
 end
