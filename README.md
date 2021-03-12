@@ -32,7 +32,7 @@ Ruby: 2.7.2 Rails: 6.1.1 Postgres: >=13
 
 
 ## Live demo
-[Just click here!]()
+[Just click here!](https://www.loom.com/share/be53de7e498f416e8c7433a86afee15e)
 
 ## Technologies
 
