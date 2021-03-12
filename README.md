@@ -31,8 +31,11 @@ Ruby: 2.7.2 Rails: 6.1.1 Postgres: >=13
 - Register with name, create articles and vote for articles!
 
 
+## Live video
+[Click here!](https://www.loom.com/share/be53de7e498f416e8c7433a86afee15e)
+
 ## Live demo
-[Just click here!](https://www.loom.com/share/be53de7e498f416e8c7433a86afee15e)
+[clik here!](https://dashboard.heroku.com/apps/warm-brook-00540)
 
 ## Technologies
 
