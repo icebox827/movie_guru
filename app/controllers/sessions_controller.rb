@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
     if @user
       session[:user_id] = @user.id
       session[:username] = @user.name
-      redirect_to articles_path
+      redirect_to new_article_path
     else
       flash.now[:danger] = 'Wrong login info'
       render 'new'
