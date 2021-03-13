@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 unless author = User.first
-  author = User.new(name: 'mohammed')
+  author = User.new(name: 'denis')
   author.save
 end
 unless category = Category.first
