@@ -5,7 +5,7 @@ RSpec.describe Category do
   name = 'category'
 
   it 'create successfully' do
-    category = Category.create(priority:priority, name: name)
+    category = Category.create(priority: priority, name: name)
     expect(category).to be_valid
   end
 
