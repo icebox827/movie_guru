@@ -32,7 +32,7 @@ Ruby: 2.7.2 Rails: 6.1.1 Postgres: >=13
 
 
 ## Live video
-[Click here!](https://www.loom.com/share/be53de7e498f416e8c7433a86afee15e)
+[Click here!](https://www.loom.com/share/88ea7d1583ab419eab4dd91a813ef3fc)
 
 ## Live demo
 [clik here!](https://shielded-depths-40245.herokuapp.com)
