@@ -9,14 +9,13 @@ class SessionsController < ApplicationController
       session[:username] = @user.name
       redirect_to articles_path
     else
-      flash.now[:danger] = 'Wrong login info'
+      flash[:alert] = 'Wrong login info'
       render 'new'
     end
   end
 
   def destroy
     reset_session
-    # session[:username] = nil
     flash[:success] = 'Log out successfully'
     redirect_to root_path
   end
