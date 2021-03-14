@@ -13,7 +13,7 @@ class UsersController < ApplicationController
       flash[:notice] = 'User created successfully'
       session[:user_id] = @user.id
       session[:username] = @user.name
-      redirect_to user_path(@user)
+      redirect_to articles_path
     else
       flash[:alert] = 'User not created, please try again'
       render 'new'
