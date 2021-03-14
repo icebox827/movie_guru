@@ -31,8 +31,11 @@ Ruby: 2.7.2 Rails: 6.1.1 Postgres: >=13
 - Register with name, create articles and vote for articles!
 
 
+## Live video
+[Click here!](https://www.loom.com/share/88ea7d1583ab419eab4dd91a813ef3fc)
+
 ## Live demo
-[Just click here!]()
+[clik here!](https://shielded-depths-40245.herokuapp.com)
 
 ## Technologies
 

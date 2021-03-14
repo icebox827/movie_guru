@@ -6,7 +6,9 @@ ruby '2.7.2'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.3'
 # Use postgresql as the database for Active Record
-gem 'pg', '~> 1.1'
+gem 'pg', '~> 1.1', group: :production
+# heroku deploy
+gem 'rails_12factor', group: :production
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
 # Use SCSS for stylesheets
@@ -15,6 +17,7 @@ gem 'sass-rails', '>= 6'
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
+gem 'font-awesome-rails'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
@@ -24,6 +27,8 @@ gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.7'
 # Use Redis adapter to run Action Cable in production
+gem 'sprockets', '~> 4.0'
+# install sprockets
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
