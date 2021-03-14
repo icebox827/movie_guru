@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe User do
-  name = 'Denis'
+  name = 'denis'
 
   it 'create successfully' do
     user = User.create(name: name)
