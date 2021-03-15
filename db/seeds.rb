@@ -16,7 +16,7 @@ image2 = 'Indiana_Jones.jpg'
 
 title3 = 'Star Trek Discovery : Commander Burnahm'
 text3 = 'One of the best series with a black female actress'
-image3 = 'Start_Trek.jpg'
+image3 = 'Star_Trek.jpg'
 
 title4 = 'Joker : The real story'
 text4 = 'This is another side of the story of the Joker'
